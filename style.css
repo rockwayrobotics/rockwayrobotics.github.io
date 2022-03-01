@@ -1,5 +1,7 @@
 *{
     font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
 }
 body{
     background-color: black;
@@ -17,10 +19,16 @@ body{
 .footer{
     float:right;
     background-image: url(images/bottom_right.png);
-    height: 280px;
+    height: 260px;
     width: 200px;
     background-repeat: no-repeat;
 
+}
+.footer-text {
+    font-size: 40px;
+    position: relative;
+    top:60px;
+    width: 80%;
 }
 .content{
     padding: 25px;
@@ -39,4 +47,10 @@ body{
 .label{
     position: relative;
     top: -7px;
+}
+.logos{
+    border: 1px white dashed;
+    height: 200px;
+    padding: 10px;
+    font-size: 20px;
 }
