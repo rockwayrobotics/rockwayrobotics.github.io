@@ -1,4 +1,42 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
 body{
-    background-image: url(images/Copy\ of\ Robotics\ sponsorship\ pitch\ .jpg);
+    background-color: black;
     color: white;
+    margin:0;
+    padding:0;
+}
+.header{
+    background-image: url(images/top_left.png);
+    background-repeat: no-repeat;
+    height: 150px;
+    float: left;
+    width:200px;
+}
+.footer{
+    float:right;
+    background-image: url(images/bottom_right.png);
+    height: 280px;
+    width: 200px;
+    background-repeat: no-repeat;
+
+}
+.content{
+    padding: 25px;
+    
+}
+.logo{
+    height: 400px;
+}
+.title{
+    color: #A71F28;
+    font-size: 50px;
+}
+.subtitle{
+    font-size: 40px;
+}
+.label{
+    position: relative;
+    top: -7px;
 }
