@@ -54,3 +54,29 @@ body{
     padding: 10px;
     font-size: 20px;
 }
+
+#topnav {
+    width: 100%;
+    background-color: #A71F28;
+    display: flex;
+    align-items: center;
+}
+
+#topnav a {
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #A71F28;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#topnav a:hover {
+    background-color: #931b23
+}
+
+#logo {
+    aspect-ratio: 588 / 838;
+    height: 50px;
+    width: auto;
+}
