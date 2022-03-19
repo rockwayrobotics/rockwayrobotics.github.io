@@ -60,6 +60,8 @@ body{
     background-color: #A71F28;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 #topnav a {
