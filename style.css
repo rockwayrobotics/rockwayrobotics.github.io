@@ -55,6 +55,13 @@ body{
     font-size: 20px;
 }
 
+.sponsors{
+    /* https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element */
+    display:inline-block;
+    margin:5px 5px;
+    padding:5px;
+}
+
 #topnav {
     width: 100%;
     background-color: #A71F28;
