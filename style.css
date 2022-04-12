@@ -53,6 +53,7 @@ body{
     height: 100%;
     padding: 10px;
     font-size: 20px;
+    border-radius: 15px;
 }
 
 .sponsors{
@@ -123,6 +124,11 @@ body{
     width: 100%;
     font-size: 85%;
     line-height: 130%;
+}
+
+.firewallImage{
+    border-radius: 25px;
+    border: 7px solid #A71F28;
 }
 
 #topnav {
