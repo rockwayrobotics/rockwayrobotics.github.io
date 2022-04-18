@@ -1,0 +1,10 @@
+# List of pages to display in nav bar
+# Fields:
+#   path: URL path of a page on this site - used for default URL and link text
+#   text: Link text. Required if path isn't set, otherwise defaults to the page title
+#   url: URL to link to. Required if path isn't set, otherwise defaults to the page URL
+items:
+  - path: _pages/about.html
+  - path: _pages/photos.html
+  - text: Sponsorship
+    url: https://rockway.ca/support/donate-now/donate-securely-online/
