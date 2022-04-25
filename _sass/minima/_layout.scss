@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
+  border-top: 5px solid var(--rockway-red);
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
@@ -20,7 +20,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: var(--rockway-red);
   }
 }
 
@@ -37,7 +37,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: var(--text-color);
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
@@ -50,7 +50,7 @@
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
-    background-color: $background-color;
+    background-color: var(--background-color);
     border: 1px solid $grey-color-light;
     border-radius: 5px;
     text-align: right;

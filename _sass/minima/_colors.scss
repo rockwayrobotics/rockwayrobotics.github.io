@@ -1,0 +1,57 @@
+$light-theme: (
+    "text-color":       #111,
+    "background-color": #fdfdfd,
+    "link-color":       #2a7ae2,
+    "rockway-red":      #a71f28,
+) !default;
+
+$dark-theme: (
+    "text-color":       #fdfdfd,
+    "background-color": #111,
+    "link-color":       lighten(#2a7ae2, 20%),
+    "rockway-red":      lighten(#a71f28, 15%),
+) !default;
+
+@mixin use-theme($theme) {
+    :root {
+        $text-color: map-get($theme, 'text-color');
+        $background-color: map-get($theme, 'background-color');
+        $link-color: map-get($theme, 'link-color');
+        $rockway-red: map-get($theme, 'rockway-red');
+
+        --text-color: #{$text-color};
+        --table-text-color: #{lighten($text-color, 18%)};
+        --background-color: #{$background-color};
+        --link-color: #{$link-color};
+        --visited-link-color: #{darken($link-color, 15%)};
+        --rockway-red: #{$rockway-red};
+    }
+}
+
+
+
+/**
+ * Light theme
+ */
+@media not all and (prefers-color-scheme: dark) {
+    @include use-theme($light-theme);
+}
+
+
+
+/**
+ * Dark theme
+ */
+@media (prefers-color-scheme: dark) {
+    @include use-theme($dark-theme);
+}
+
+@include high_motion() {
+    /**
+     * Transition colors during light/dark theme changes
+     */
+    body {
+        transition-property: background-color, color;
+        transition-duration: 0.5s;
+    }
+}
