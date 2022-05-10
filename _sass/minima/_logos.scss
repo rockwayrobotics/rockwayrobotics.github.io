@@ -2,6 +2,10 @@
     --color1: var(--logo-color);
 }
 
+.logo-grayscale {
+    --color1: var(--logo-grayscale-color);
+}
+
 #main-logo {
     width: 100%;
     height: auto;

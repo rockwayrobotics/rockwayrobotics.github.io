@@ -1,0 +1,6 @@
+{%- assign class = include.class | default: "" | prepend: "logo-grayscale " | strip -%}
+{%- include logo.html
+    class=class
+    props=include.props
+    id=include.id
+-%}

@@ -13,6 +13,8 @@
  *     defaults to 18% lighter than text-color
  * - visited-link-color - used for links that have been visited
  *     defaults to 15% darker than link-color
+ * - logo-grayscale-color - used as a secondary logo color
+ *     defaults to text-color
  */
 
 $light-theme: (
@@ -35,6 +37,7 @@ $dark-theme: (
         $defaults: (
             "table-text-color": lighten(map-get($theme, "text-color"), 18%),
             "visited-link-color": darken(map-get($theme, "link-color"), 15%),    
+            "logo-grayscale-color": map-get($theme, "text-color"),    
         );
 
         $vars: map-merge($defaults, $theme);

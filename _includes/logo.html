@@ -1,0 +1,14 @@
+{%- comment -%}
+This file is not intended to be included directly.
+Consider including logo-standard.html or logo-grayscale.html instead.
+{%- endcomment -%}
+{%- capture props -%}
+class="{{ include.class }}"
+{%- if include.id -%}
+    id="{{ include.id }}"
+{%- endif -%}
+{{- include.props | default: "" -}}
+{%- endcapture -%}
+<svg viewbox="0 0 196 279.2" {{ props }}>
+    <use href="{{ "/assets/images/rockwayRoboticsLogoSimple-min.svg" | relative_url }}#logo" />
+</svg>
