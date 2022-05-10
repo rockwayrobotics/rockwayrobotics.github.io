@@ -63,13 +63,3 @@ $dark-theme: (
 @media (prefers-color-scheme: dark) {
     @include use-theme($dark-theme);
 }
-
-@include high_motion() {
-    /**
-     * Transition colors during light/dark theme changes
-     */
-    body {
-        transition-property: background-color, color;
-        transition-duration: 0.5s;
-    }
-}

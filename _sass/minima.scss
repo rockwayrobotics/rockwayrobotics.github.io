@@ -47,14 +47,27 @@ $on-laptop:        800px !default;
   }
 }
 
+// Specify properties to transition when the color scheme changes, e.g:
+// body {
+//   color: var(--text-color);
+//   background-color: var(--background-color);
+//   @include color-scheme-transition(color, background-color);
+// }
+@mixin color-scheme-transition($props...) {
+  @include high-motion() {
+      transition-property: $props;
+      transition-duration: .5s;
+  }
+}
+
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
 
 // Import partials.
 @import
-  "minima/base",
   "minima/colors",
+  "minima/base",
   "minima/layout",
   "minima/syntax-highlighting",
   "minima/logos"
