@@ -4,6 +4,7 @@
 .site-header {
   border-top: 5px solid var(--rockway-red);
   border-bottom: 1px solid $grey-color-light;
+  @include color-scheme-transition(border-color);
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -17,6 +18,7 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+  @include color-scheme-transition(color);
 
   &,
   &:visited {
@@ -26,6 +28,7 @@
 
 .site-nav {
   float: right;
+  @include color-scheme-transition(background-color);
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
@@ -38,6 +41,7 @@
 
   .page-link {
     color: var(--text-color);
+    @include color-scheme-transition(color);
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one

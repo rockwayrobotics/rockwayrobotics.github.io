@@ -17,6 +17,7 @@ body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: var(--text-color);
   background-color: var(--background-color);
+  @include color-scheme-transition(color, background-color);
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -104,6 +105,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   color: var(--link-color);
+  @include color-scheme-transition(color);
   text-decoration: none;
 
   &:visited {
@@ -233,6 +235,7 @@ table {
   width: 100%;
   text-align: $table-text-align;
   color: var(--table-text-color);
+  @include color-scheme-transition(color);
   border-collapse: collapse;
   border: 1px solid $grey-color-light;
   tr {
