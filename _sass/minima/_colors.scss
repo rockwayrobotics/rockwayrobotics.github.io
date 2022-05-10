@@ -24,10 +24,11 @@ $light-theme: (
 ) !default;
 
 $dark-theme: (
-    "text-color":       #fdfdfd,
-    "background-color": #111,
-    "link-color":       lighten(#2a7ae2, 20%),
-    "rockway-red":      lighten(#a71f28, 15%),
+    "text-color":         #fdfdfd,
+    "background-color":   #111,
+    "link-color":         lighten(#2a7ae2, 20%),
+    "visited-link-color": lighten(#2a7ae2, 20%),
+    "rockway-red":        lighten(#a71f28, 15%),
 ) !default;
 
 @mixin use-theme($theme) {
