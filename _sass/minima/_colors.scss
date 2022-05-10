@@ -6,8 +6,7 @@
  * - text-color - used for normal text
  * - background-color - used for the page background
  * - link-color - used for all links
- * - rockway-red - used for some accents, e.g. the logo SVG color
- *     needed for dark theme because normal Rockway red isn't readable on black
+ * - logo-color - also used for some accents
  * 
  * Optional variables:
  * - table-text-color - used for text inside tables
@@ -20,7 +19,7 @@ $light-theme: (
     "text-color":       #111,
     "background-color": #fdfdfd,
     "link-color":       #2a7ae2,
-    "rockway-red":      #a71f28,
+    "logo-color":      #a71f28,
 ) !default;
 
 $dark-theme: (
@@ -28,7 +27,7 @@ $dark-theme: (
     "background-color":   #111,
     "link-color":         lighten(#2a7ae2, 20%),
     "visited-link-color": lighten(#2a7ae2, 20%),
-    "rockway-red":        lighten(#a71f28, 15%),
+    "logo-color":        lighten(#a71f28, 15%),
 ) !default;
 
 @mixin use-theme($theme) {

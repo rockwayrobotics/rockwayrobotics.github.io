@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid var(--rockway-red);
+  border-top: 5px solid var(--logo-color);
   border-bottom: 1px solid $grey-color-light;
   @include color-scheme-transition(border-color);
   min-height: $spacing-unit * 1.865;
@@ -22,7 +22,7 @@
 
   &,
   &:visited {
-    color: var(--rockway-red);
+    color: var(--logo-color);
   }
 }
 
