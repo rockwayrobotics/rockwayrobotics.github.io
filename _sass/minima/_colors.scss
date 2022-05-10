@@ -1,3 +1,21 @@
+/**
+ * Variables used in page theming
+ * ------------------------------
+ * 
+ * Required variables:
+ * - text-color - used for normal text
+ * - background-color - used for the page background
+ * - link-color - used for all links
+ * - rockway-red - used for some accents, e.g. the logo SVG color
+ *     needed for dark theme because normal Rockway red isn't readable on black
+ * 
+ * Optional variables:
+ * - table-text-color - used for text inside tables
+ *     defaults to 18% lighter than text-color
+ * - visited-link-color - used for links that have been visited
+ *     defaults to 15% darker than link-color
+ */
+
 $light-theme: (
     "text-color":       #111,
     "background-color": #fdfdfd,
@@ -14,17 +32,16 @@ $dark-theme: (
 
 @mixin use-theme($theme) {
     :root {
-        $text-color: map-get($theme, 'text-color');
-        $background-color: map-get($theme, 'background-color');
-        $link-color: map-get($theme, 'link-color');
-        $rockway-red: map-get($theme, 'rockway-red');
+        $defaults: (
+            "table-text-color": lighten(map-get($theme, "text-color"), 18%),
+            "visited-link-color": darken(map-get($theme, "link-color"), 15%),    
+        );
 
-        --text-color: #{$text-color};
-        --table-text-color: #{lighten($text-color, 18%)};
-        --background-color: #{$background-color};
-        --link-color: #{$link-color};
-        --visited-link-color: #{darken($link-color, 15%)};
-        --rockway-red: #{$rockway-red};
+        $vars: map-merge($defaults, $theme);
+
+        @each $prop, $value in $vars {
+            --#{$prop}: #{$value};
+        }
     }
 }
 
