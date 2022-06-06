@@ -14,15 +14,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Rockway Robotics 8089
-email: your-email@example.com
+email: robotics@student.rockway.ca
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  FRC Team 8089 Rockway Robotics
+  from Rockway Mennonite Collegiate in Kitchener, Ontario. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: 8089rockway
+github_username:  rockwayrobotics
+instagram_username: 8089.rockway
 
 
 # Build settings
