@@ -27,8 +27,8 @@ instagram_username: 8089.rockway
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
 collections:
   pages:
     output: true
