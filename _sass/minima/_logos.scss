@@ -6,6 +6,14 @@
     --color1: var(--logo-grayscale-color);
 }
 
+.logos {
+    border: 1px white dashed;
+    height: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
 #main-logo {
     width: 100%;
     height: auto;
